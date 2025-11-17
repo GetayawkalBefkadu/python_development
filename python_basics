@@ -1,0 +1,6 @@
+#learning the basics
+print("welcome!!!")
+# variables
+first_name = "Getayawkal"
+last_name = "Befkadu"
+print(f"Hello {first_name} {last_name}  welcome to python programming!  ")
