@@ -8,12 +8,14 @@ print(f"Hello {first_name} {last_name}  welcome to python programming!  ")
 age = input("how old are you? \n"  )
 print(f"very good timing to learn coding at the age of: {age} ,  keep going bro!!")
 # float
-height = input("enter your height? \n" )
-print(f" {height} cm is good!! you are not short dude ")
+height = input("enter your height in cm? \n" )
+print(f" {height} cm is good!! you are not short dude, haha but height dont matter, gotcha!!! ")
 # boolean
+developer = True
 dev = input("i think you have question, will u  be developer?  \n" )
 if dev == "yes":
     print("good job")
+    print("You will  be python developer, just don't quit fast!")
 elif dev == "no":
     print("you have no choice, it is do or die my friend!")
 else:
