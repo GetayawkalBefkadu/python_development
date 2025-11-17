@@ -7,4 +7,14 @@ print(f"Hello {first_name} {last_name}  welcome to python programming!  ")
 # integer variables
 age = input("how old are you? \n"  )
 print(f"very good timing to learn coding at the age of: {age} ,  keep going bro!!")
-
+# float
+height = input("enter your height? \n" )
+print(f" {height} cm is good!! you are not short dude ")
+# boolean
+dev = input("i think you have question, will u  be developer?  \n" )
+if dev == "yes":
+    print("good job")
+elif dev == "no":
+    print("you have no choice, it is do or die my friend!")
+else:
+    print("wrong choice")
