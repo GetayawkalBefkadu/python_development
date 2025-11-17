@@ -1,6 +1,10 @@
 #learning the basics
 print("welcome!!!")
-# variables
+# string variables
 first_name = "Getayawkal"
 last_name = "Befkadu"
 print(f"Hello {first_name} {last_name}  welcome to python programming!  ")
+# integer variables
+age = input("how old are you? \n"  )
+print(f"very good timing to learn coding at the age of: {age} ,  keep going bro!!")
+
