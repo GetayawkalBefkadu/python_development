@@ -1,0 +1,66 @@
+"""
+Project 1: Python Beginner Project
+Concepts Included:
+- Variables ❎
+- Type Casting 💱
+- User Input ⌨️
+- MadLibs Game 📖 (story generator)
+- Arithmetic & Math 📐
+- If Statements 🧠
+
+This is a single-file project suitable for GitHub.
+"""
+
+print("===== WELCOME TO YOUR FIRST PYTHON PROJECT =====")
+
+# ------------------------------
+# 1. VARIABLES & USER INPUT ⌨️
+# ------------------------------
+name = input("Enter your name: ")  # string
+age = int(input("Enter your age: "))  # type casting to integer
+
+# ------------------------------
+# 2. ARITHMETIC & MATH 📐
+# ------------------------------
+# Calculate the user's age in 10 years
+future_age = age + 10
+print(f"In 10 years, you will be {future_age} years old.")
+
+# Check voting eligibility using if statements
+if age >= 18:
+    print("You are old enough to vote.")
+else:
+    print("You are NOT old enough to vote.")
+
+print("\n=====================================")
+print("📖 MADLIBS GAME - STORY GENERATOR")
+print("=====================================")
+
+# ------------------------------
+# 3. MADLIBS GAME 📖
+# ------------------------------
+
+# User inputs for the story
+place = input("Enter a place: ")
+adjective = input("Enter an adjective: ")
+animal = input("Enter an animal: ")
+action = input("Enter a verb (action): ")
+number = int(input("Enter a number: "))  # type casting
+
+# Create the story
+story = f"""
+One day, {name} went to {place}. It was a very {adjective} day.
+Suddenly, a {animal} appeared and started to {action}!
+{name} couldn't believe it.
+It happened {number} times before everything became normal.
+What a crazy adventure!
+"""
+
+print("\n===== YOUR STORY =====")
+print(story)
+print("=======================\n")
+
+# ------------------------------
+# END OF PROJECT
+# ------------------------------
+print("Thanks for playing! Upload this project to GitHub 🚀💻")
