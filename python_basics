@@ -24,3 +24,7 @@ else:
 x = "10"
 num = int(x)
 print(num, type(num))
+# e.g 2 
+x = "5.6"
+num = float(x)
+print(num, type(num))
