@@ -113,7 +113,74 @@ What a day! 😲
         print("Invalid choice ❌ Please enter 1-4.\n")
 
 
+"""
+Project 3: Simple To-Do List Manager 📝
+Features:
+- Variables
+- Lists
+- User Input
+- Loops
+- If Statements
+- Basic Data Management
+Great beginner-friendly project for GitHub.
+"""
 
+print("==============================")
+print("      TO-DO LIST MANAGER 📝   ")
+print("==============================\n")
+
+tasks = []  # list to store tasks
+
+while True:
+    print("Choose an option:")
+    print("1. Add Task ➕")
+    print("2. View Tasks 📄")
+    print("3. Remove Task ❌")
+    print("4. Clear All Tasks 🧹")
+    print("5. Exit 🚪")
+
+    choice = input("Enter your choice (1-5): ")
+
+    # Add task
+    if choice == "1":
+        task = input("Enter a new task: ")
+        tasks.append(task)
+        print("Task added! ✔\n")
+
+    # View tasks
+    elif choice == "2":
+        if len(tasks) == 0:
+            print("No tasks found. Your list is empty! 📭\n")
+        else:
+            print("\n===== YOUR TASKS =====")
+            for i, t in enumerate(tasks, 1):
+                print(f"{i}. {t}")
+            print("=======================\n")
+
+    # Remove task
+    elif choice == "3":
+        if len(tasks) == 0:
+            print("Nothing to remove. Your list is empty!\n")
+        else:
+            num = int(input("Enter task number to remove: "))
+            if 1 <= num <= len(tasks):
+                removed = tasks.pop(num - 1)
+                print(f"Removed: {removed} ✖\n")
+            else:
+                print("Invalid task number! ❌\n")
+
+    # Clear all
+    elif choice == "4":
+        tasks.clear()
+        print("All tasks cleared! 🧹\n")
+
+    # Exit
+    elif choice == "5":
+        print("Goodbye! 👋 Your to-do list is saved in memory while running.")
+        break
+
+    else:
+        print("Invalid choice ❌ Please choose between 1 and 5.\n")
 
 
 
