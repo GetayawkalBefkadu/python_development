@@ -1,0 +1,8 @@
+name = input("Enter a name: ")
+place = input("Enter a place: ")
+food = input("Enter a food: ")
+feeling = input("Enter a feeling: ")
+
+story = f"One day, {name} went to {place} and ate {food}. It made them feel very {feeling}!"
+
+print(story)
